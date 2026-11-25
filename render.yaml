@@ -1,0 +1,7 @@
+# Blueprint Render (opsional). Bisa juga membuat layanan manual lewat dashboard.
+services:
+  - type: web
+    name: giganta-exam
+    runtime: docker
+    plan: free          # ubah bila paket gratis tidak tersedia / ingin yang selalu aktif
+    healthCheckPath: /healthz

@@ -1,0 +1,15 @@
+[package]
+name = "giganta-exam"
+version = "4.5.0"
+edition = "2021"
+build = "build.rs"
+description = "Giganta Exam Simulator: satu binary Rust ringan tanpa dependensi"
+
+[dependencies]
+# sengaja kosong: seluruh program hanya memakai pustaka standar Rust
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true
